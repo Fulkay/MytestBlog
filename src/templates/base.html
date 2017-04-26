@@ -2,7 +2,7 @@
 <!--DOCTYPE html -->
 <html>
 <head>
-<title>{% block head_title %} Real & Digital {% endblock head_title %}</title>
+<title>{% block head_title %} RS & A {% endblock head_title %}</title>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
@@ -101,12 +101,6 @@ $(document).ready(function(){
 </script>
 
 
-    <footer class="footer">
-		<div class="container">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title={{ instance.title }}&summary={{ share_string }}&source={{ request.build_absolute_uri }}" target="blank" class="fa fa-linkedin"></a> | <a href="https://twitter.com/home?status={{ instance.content|truncatechars:80 }}%20{{ request.build_absolute_uri }}" target="blank" class="fa fa-twitter"></a> | <a href="https://plus.google.com/share?url={{ request.build_absolute_uri }}" class="fa fa-google-plus"></a>
-		</div>
-	</footer>
-
        <!--<footer class="bd-footer text-muted">
           <div class="copyrights">
             <p>&copy;2017 <a href="{% url 'work' %}" target="_blank"> Research, Strategy & Analytics</a></p>
@@ -114,10 +108,77 @@ $(document).ready(function(){
 <footer>
 <div id="footer">
   <div class="container text-center">
-    <p <a href="{% url 'work' %}">@2017 Research, Strategy & Analytics</a></p>
   </div>
 </div>
 </footer>
+
+<!-- Footer Wrapper -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container text-center">
+						<div class="row">
+							<div class="3u 12u(mobile)">
+
+							</div>
+							<div class="3u 12u(mobile)">
+
+							</div>
+							<div class="6u 12u(mobile)">
+							<div class="container">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ request.build_absolute_uri }}&title={{ instance.title }}&summary={{ share_string }}&source={{ request.build_absolute_uri }}" target="blank" class="fa fa-linkedin"></a> | <a href="https://twitter.com/home?status={{ instance.content|truncatechars:80 }}%20{{ request.build_absolute_uri }}" target="blank" class="fa fa-twitter"></a> | <a href="https://plus.google.com/share?url={{ request.build_absolute_uri }}" class="fa fa-google-plus"></a>
+		</div>
+				</div>
+							<div class="6u 12u(mobile)">
+
+								<!-- Contact -->
+									<br>
+								<a type="button" class="btn btn-sm btn-primary" href="{% url 'work' %}" value="Input Button" role="button">Get in touch &raquo;</a>
+									 </br>
+								<div>
+											<div class="row">
+												<div class="6u 12u(mobile)">
+												</div>
+												 <br class="footer">
+
+
+												<div class="6u 12u(mobile)">
+													<dl class="contact">
+														<dt><u>Email:</u></dt>
+														<dd><a href="#">kayiranga@gmail.com</a></dd></br>
+														</dd>
+														<dt><u>Tel:</u></dt>
+														<dd>(44) 07947 197 008</dd>
+													</dl>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u">
+								<div id="copyright text-center">
+									<ul class="menu">
+										<li><a href="{% url 'work' %}">&copy; Research, Strategy & Analytics</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
